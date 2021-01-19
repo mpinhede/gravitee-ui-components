@@ -31,19 +31,9 @@ jobs:
       - image: circleci/node:lts-stretch
     steps:
       - checkout
-      - restore_cache:
-          name: Restore `node_modules` cache
-          keys:
-            - node-modules-cache-{{ checksum "package-lock.json" }}
-            - node-modules-cache-
       - run:
           name: Install dependencies
           command: npm install
-      - save_cache:
-          name: Save `node_modules` cache
-          key: node-modules-cache-{{ checksum "package-lock.json" }}
-          paths:
-            - ./node_modules
       - run:
           name: Building Storybook
           command: npm run build
