@@ -37,7 +37,7 @@ import { dispatchCustomEvent } from '../lib/events';
  * @attr {Boolean} skeleton -  enable skeleton screen UI pattern (loading hint)
  * @attr {Boolean} clickable - If true, tag has link style
  *
- * @cssprop {Length} [--gv-tag--fz=var(--gv-theme-font-size-s, 12px)] - Font size
+ * @cssprop {Length} [--gv-tag--fz=var(--gv-theme-font-size-l, 18px)] - Font size
  * @cssprop {Length} [--gv-tag--p=4px 8px] - Padding
  * @cssprop {Length} [--gv-tag--bdr=4px] - Border radius
  * @cssprop {String} [--gv-tag--bsw=none] - Box shadow
